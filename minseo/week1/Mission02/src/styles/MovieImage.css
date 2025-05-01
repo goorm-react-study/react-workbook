@@ -1,0 +1,27 @@
+.movieImage{
+    width: 100px;
+    height: 150px;
+    border-radius: 8px;
+}
+.movieCard {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    width: 100px;
+    height: 150px;
+
+}
+
+.movieCard:hover .overlay {
+    opacity: 1;
+}
